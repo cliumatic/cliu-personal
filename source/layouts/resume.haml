@@ -1,0 +1,35 @@
+!!! 5
+%html{lang: "en"}
+  %head
+    %meta{charset: "utf-8"}
+    %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
+    %title Christina K. Liu Resume
+    %link{rel: "stylesheet", href: "https://cdn.jsdelivr.net/npm/holiday.css@0.11.2"}
+    %script{src:"https://kit.fontawesome.com/e76ee0328c.js", crossorigin: "anonymous"}
+    %link{rel: "stylesheet", href: "#{url_for '/stylesheets/styles.css'}"}
+    - if development?
+      %link{rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css"}
+  %body.resume
+    - if development?
+      = partial "partials/_dev_ribbon.haml", locals: locals || {}
+    %h1 Christina K. Liu
+    %ul.social
+      %li
+        %a{href: "mailto:ckliu831@gmail.com"}
+          %span.fa-solid.fa-envelope
+          %span ckliu831@gmail.com
+      %li
+        %a{href: "https://www.linkedin.com/in/christinakliu/"}
+          %span.fa-brands.fa-linkedin-in
+          %span linkedin.com/in/christinakliu/
+      %li.print-only
+        %a{href: "https://cliu.bigpencil.net/resume/"}
+          %span.fa-solid.fa-file
+          %span Latest: https://cliu.bigpencil.net/resume/
+      %li
+        %span.fa-solid.fa-map-marked-alt
+        %span San Francisco Bay Area
+    = yield
+    %hr
+    %span.version
+      = "v#{updated_date("source#{current_resource.path}.html.md")}"

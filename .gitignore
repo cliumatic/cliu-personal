@@ -1,0 +1,6 @@
+.idea/
+.bundle/
+.sass-cache/
+build/
+vendor/
+.DS_Store
