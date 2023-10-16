@@ -3,10 +3,6 @@
     font-size: 12px;
   }
 
-  .print-only {
-    display: list-item;
-  }
-
   .resume {
     padding: 0;
     color: black;
@@ -14,6 +10,10 @@
     h1, h2, h3, h4, h5 {
       break-after: avoid-page;
       page-break-after: avoid;
+    }
+
+    .print-only {
+      display: list-item;
     }
 
     .tabs {
@@ -26,7 +26,8 @@
     {
       cursor: default;
       display: block;
-    }  }
+    }
+  }
 
   h1, h2, h3, h4, h5, body {
     color: black;

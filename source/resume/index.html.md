@@ -11,6 +11,8 @@ Experienced, hands-on product management professional who loves working creative
 
 ### VMware Tanzu Labs <span class="duration">03/2016 - Present</span>
 
+Mention VMW buying Pivotal Labs, etc.
+
 #### Senior Staff Product Manager
 
 - Consultant on myriad
